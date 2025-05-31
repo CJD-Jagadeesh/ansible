@@ -1,6 +1,6 @@
-name: varible args
-hosts: all
-tasks:
+- name: varible args
+  hosts: all
+  tasks:
   - name: print course information
     ansible.builtin.debug:
-    msg: " hello im learning {{ COURSE }}, Duration: {{ DURURATION }}, Trainer: {{ TRAINER}}"
+    msg: "hello im learning {{ COURSE }}, Duration: {{ DURURATION }}, Trainer: {{ TRAINER}}"
