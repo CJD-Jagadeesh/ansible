@@ -1,5 +1,5 @@
 - name: Variables file
-  hosts: 172.31.32.13
+  hosts: all
   vars_files:
     - varsfile.yaml 
   tasks:
