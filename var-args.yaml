@@ -1,6 +1,6 @@
 - name: varible args
   hosts: all
   tasks:
-    - name: ptint course information
+    - name: print course information
       ansible.builtin.debug:
-      mas: " hello im learning {{ COURSE }}, Duration: {{ DURURATION }}, Trainer: {{ TRAINER}}"
+      msg: " hello im learning {{ COURSE }}, Duration: {{ DURURATION }}, Trainer: {{ TRAINER}}"
