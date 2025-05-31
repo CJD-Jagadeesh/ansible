@@ -1,0 +1,8 @@
+- name: Variables file
+  hosts: 172.31.32.13
+  vars_files:
+    - varsfile.yaml 
+  tasks:
+    - name: Run Variables file
+      ansible.builtin.debug:
+        msg: "Hello {{ Course, Duration, Trainer, Email }}"
