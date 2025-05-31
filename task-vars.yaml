@@ -1,0 +1,12 @@
+- name: task vars
+  hosts: 172.31.32.13
+  vars:
+    Course: DevOps
+    Duration: 4months
+    Trainer: Naresh
+  tasks: 
+    - name: task vars
+      vars:
+        Course: Ansible
+      ansible.builtin.debug:
+        msg: "Hello Team {{ Course, Duration, Trainer }}"
