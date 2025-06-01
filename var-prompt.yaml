@@ -1,0 +1,17 @@
+- name: variable prompt 
+  hosts: 
+  vars_prompt:
+    - name: USERNAME
+      prompt: please enter your user name
+      private: true
+    - name: PASSWORD
+      prompt: please enter your password
+      privtae: true
+  tasks:
+    -name: print user information
+    amsible.builtin.debug:
+      msg: "Hello user name and password {{ USERNAME, PASSWORD }}"
+
+      
+      
+      
