@@ -1,0 +1,19 @@
+-name: data types demo
+hosts: local
+connection: local
+vars: 
+  COURSE: DevOps
+  DURATION: 120 hrs
+  IS_LIVE: true
+  TRAINER: Nene
+  TOOLS:
+    - Linux
+    - Shell
+    - Ansible
+  CONCEPTS:
+    CI: Jenkins
+    SCRIPTING: "Shell, Ansible, Terraform, Python"
+tasks:
+  -name: print data types demo
+  ansible.bulitin.debug:
+    msg: "Course is: {{ COURSE }}, {{ DURATION }}, {{ IS_LIVE }}, {{ TOOLS }}, {{ CONCEPTS }}"
